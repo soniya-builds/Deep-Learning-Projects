@@ -22,6 +22,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+MODEL = tf.keras.models.load_model("D:/Model Training/models/1")
+
+
 @app.get("/ping")
 async def ping():
     return "Hello, I am alive"
