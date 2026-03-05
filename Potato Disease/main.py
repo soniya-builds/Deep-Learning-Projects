@@ -6,14 +6,12 @@ from io import BytesIO
 from PIL import Image
 import tensorflow as tf
 
-
 app = FastAPI()
 
 origins = [
     "http://localhost",
     "http://localhost:3000",
 ]
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -23,11 +21,13 @@ app.add_middleware(
 )
 
 MODEL = tf.keras.models.load_model("D:/Model Training/models/1")
+
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
 @app.get("/ping")
 async def ping():
     return "Hello, I am alive"
+
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
     return image
