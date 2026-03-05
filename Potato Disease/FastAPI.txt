@@ -1,0 +1,83 @@
+START
+  │
+  ▼
+Open Browser
+  │
+  ▼
+Go to URL
+http://127.0.0.1:8001/docs
+(Swagger UI of FastAPI)
+  │
+  ▼
+Swagger Interface Loads
+  │
+  ▼
+Select Endpoint
+POST /predict
+  │
+  ▼
+Click "Try it out"
+  │
+  ▼
+Upload Image File
+(Potato leaf image from dataset)
+  │
+  ▼
+Click "Execute"
+  │
+  ▼
+Browser Sends Request
+POST /predict
+with image file
+  │
+  ▼
+FastAPI Server Receives Request
+  │
+  ▼
+File Read
+await file.read()
+  │
+  ▼
+Image Converted
+Bytes → PIL Image → NumPy Array
+  │
+  ▼
+Image Preprocessing
+Resize + Normalize
+  │
+  ▼
+Create Batch
+np.expand_dims(image,0)
+  │
+  ▼
+TensorFlow Model Runs
+MODEL.predict()
+  │
+  ▼
+Prediction Output
+[probabilities]
+  │
+  ▼
+Find Highest Probability
+np.argmax()
+  │
+  ▼
+Map to Class Name
+Early Blight / Late Blight / Healthy
+  │
+  ▼
+Create JSON Response
+{
+ "class": "...",
+ "confidence": ...
+}
+  │
+  ▼
+FastAPI Sends Response
+  │
+  ▼
+Swagger Displays Result
+Prediction + Confidence
+  │
+  ▼
+END
