@@ -58,4 +58,5 @@ Some of the upcoming projects that may be added:
 ## Author
 
 Soniya Akter
+<br>
 Learning and building projects in **Data Analytics, AI, and Deep Learning**.
