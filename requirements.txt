@@ -1,9 +1,44 @@
-tensorflow==2.12.0
-numpy==1.23.5
-matplotlib==3.7.1
-pandas==1.5.3
-scikit-learn==1.2.2
-opencv-python==4.7.0.72
-ipython==8.12.0
-notebook==6.5.4
-seaborn==0.12.2
+# Core
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+
+# Deep Learning
+tensorflow
+torch
+torchvision
+torchaudio
+
+# NLP
+nltk
+spacy
+transformers
+datasets
+sentencepiece
+
+# Utility
+tqdm
+joblib
+
+# Notebook / Dev
+jupyter
+ipykernel
+
+# Optional (useful in many DL projects)
+gensim
+opencv-python
+Pillow
+
+# API / Deployment (optional)
+fastapi
+uvicorn
+
+# Experiment tracking (optional)
+wandb
