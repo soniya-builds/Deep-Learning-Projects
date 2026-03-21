@@ -16,3 +16,6 @@ output:
 
  --fit transform
  Converts your text data into numbers that a machine learning model can understand.
+
+ --Multinomial Naive Bayes (MNB) is a machine learning algorithm for text classification
+model = MultinomialNB()
