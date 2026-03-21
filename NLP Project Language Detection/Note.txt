@@ -1,0 +1,15 @@
+CountVectorizer is a tool/class from scikit-learn that converts 
+text into numbers so machine learning models can understand it.
+
+
+It creates a Bag of Words (BoW) representation:
+*Finds all unique words in your text
+*Counts how many times each word appears
+*Converts text → numeric matrix
+
+
+data = ["I love NLP", "I love machine learning"]
+output:
+['learning', 'love', 'machine', 'nlp']
+[[0 1 0 1]
+ [1 1 1 0]]
