@@ -11,10 +11,10 @@ seaborn
 scikit-learn
 
 # Deep Learning
-#tensorflow
-#torch
-#torchvision
-#torchaudio
+tensorflow
+torch
+torchvision
+torchaudio
 
 # NLP
 nltk
