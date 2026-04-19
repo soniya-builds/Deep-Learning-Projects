@@ -1,0 +1,48 @@
+# # Core
+# numpy
+# pandas
+# scipy
+
+# # Visualization
+# matplotlib
+# seaborn
+
+# # Machine Learning
+# scikit-learn
+
+# # Deep Learning
+# tensorflow
+# torch
+# torchvision
+# torchaudio
+
+# # NLP
+# nltk
+# spacy
+# transformers
+# datasets
+# sentencepiece
+
+# # Utility
+# tqdm
+# joblib
+
+# # Notebook / Dev
+# jupyter
+# ipykernel
+
+# # Optional (useful in many DL projects)
+# gensim
+# opencv-python
+# Pillow
+
+# # API / Deployment (optional)
+# fastapi
+# uvicorn
+
+# # Experiment tracking (optional)
+# wandb
+mne
+numpy<2.0
+pandas
+matplotlib
